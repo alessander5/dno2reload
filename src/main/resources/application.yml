@@ -1,0 +1,23 @@
+spring:
+  profiles: myLocalEnvRun
+  datasource:
+    url: jdbc:mysql://148.251.138.115:3306/dno2reload?useEncoding=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true
+    username: dno2user
+    password: dno2user
+    driverClassName: com.mysql.jdbc.Driver
+    maximumPoolSize: 5
+  jpa:
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: false
+    database: MYSQL
+application:
+  server:
+    asyncTimeOut: 10000
+    threadPool:
+      min: 100
+      max: 700
+    asyncThreadPool:
+      corePoolSize: 100
+      maxPoolSize: 700

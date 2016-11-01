@@ -1,14 +1,12 @@
 package com.dno2reload.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Getter
-@Setter
+@Data
 @Entity
 public class Reservations{
     @Id
@@ -16,12 +14,5 @@ public class Reservations{
     private Long id;
 
     private String reservationName;
-
-    public Reservations(){
-    }
-
-    public Reservations(String reservationName){
-        this.reservationName = reservationName;
-    }
 
 }
