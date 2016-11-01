@@ -5,10 +5,12 @@ import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Data
 @Entity
-public class Reservations{
+@Table(name = "reservations")
+public class Reservation {
     @Id
     @GeneratedValue
     private Long id;
