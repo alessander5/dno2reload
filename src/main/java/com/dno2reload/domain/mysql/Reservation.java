@@ -1,4 +1,4 @@
-package com.dno2reload.domain;
+package com.dno2reload.domain.mysql;
 
 import lombok.Data;
 
@@ -13,8 +13,9 @@ import javax.persistence.Table;
 public class Reservation {
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
 
     private String reservationName;
+
 
 }

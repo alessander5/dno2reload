@@ -1,6 +1,6 @@
 package com.dno2reload.dto;
 
-import com.dno2reload.domain.Reservation;
+import com.dno2reload.domain.mysql.Reservation;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
