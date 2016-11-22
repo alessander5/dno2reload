@@ -3,7 +3,6 @@ package com.dno2reload.domain.mongo;
 import com.dno2reload.domain.mysql.Reservation;
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import javax.persistence.CascadeType;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
